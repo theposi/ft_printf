@@ -6,12 +6,17 @@
 /*   By: crizapat <crizapat@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/27 10:52:12 by crizapat          #+#    #+#             */
-/*   Updated: 2024/09/06 12:13:19 by crizapat         ###   ########.fr       */
+/*   Updated: 2024/09/12 14:27:17 by crizapat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../ft_printf.h"
 
+/**
+ * Prints data based on a specific format.
+ * @param format The initial point of the list.
+ * @param ... The rest of the variable arguments.
+ */
 int	ft_printf(char const *format, ...)
 {
 	int			i;

@@ -6,7 +6,7 @@
 /*   By: crizapat <crizapat@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/27 10:52:24 by crizapat          #+#    #+#             */
-/*   Updated: 2024/09/06 11:41:14 by crizapat         ###   ########.fr       */
+/*   Updated: 2024/09/12 14:37:15 by crizapat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	ft_putchar(char charac, int *index)
 	if (write(1, &charac, 1) == -1)
 		return (-1);
 	(*index)++;
-	return (0);
+	return (1);
 }
 
 void	format_catcher(char format, va_list args, int *index)
@@ -36,5 +36,4 @@ void	format_catcher(char format, va_list args, int *index)
 		ft_unsigned_numb(va_arg(args, unsigned int), index);
 	else if (format == '%')
 		ft_putchar('%', index);
-	return ;
 }
